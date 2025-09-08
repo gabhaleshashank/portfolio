@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #111111;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 40%;
+  min-width: 300px;
+  padding: 2rem 0.5rem 2rem 2rem;
+  /* border-right: 1px solid #eee; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.profile {
+  text-align: left;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  margin: 0 0 1.5rem 0;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+/* Typography */
+.name {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.roles {
+  font-size: 1.2rem;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #9ca3af;
+}
+
+.tagline {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #a7afbc;
+}
+
+/* Buttons & Links */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+/* Resume Button */
+.btn-resume {
+  background: #222;
+  color: #fff;
+  border: 0.1rem solid #e5e7eb;
+}
+
+.btn-resume:hover {
+  background: #ffffff;
+  color: #111111;
+}
+
+/* Contact Button */
+.btn-contact {
+  background: #374151;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.btn-contact:hover {
+  background: #666;
+  color: #fff;
+}
+
+/* Social Icons */
+.socials {
+  display: inline-flex;
+  gap: 0.8rem;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+
+.socials a {
+  color: #9ca3af;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #0073e6;
+}
+
+/* Call to Action */
+.cta-text {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 500;
+  outline: none;
+}
+
+/* Main Content */
+.content {
+  margin-left: 40%;
+  padding: 3rem;
+  overflow-y: auto;
+  width: 60%;
+}
+
+.about-section,
+.skills-section,
+.experience-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.section-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #d1d5db;
+}
+
+/* Skills */
+.skill-category {
+  margin-bottom: 2rem;
+}
+
+.skill-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #e5e7eb;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+}
+
+/* Category Colors */
+.badge-lang {
+  background: rgba(59, 130, 246, 0.3);
+  color: #3b82f6;
+}
+
+.badge-fw {
+  background: rgba(16, 185, 129, 0.3);
+  color: #10b981;
+}
+
+.badge-back {
+  background: rgba(139, 92, 246, 0.3);
+  color: #8b5cf6;
+}
+
+.badge-db {
+  background: rgba(249, 115, 22, 0.3);
+  color: #f97316;
+}
+
+/* Experience Section */
+.experience-section {
+  margin-bottom: 3rem;
+}
+
+.exp-card {
+  background: #111111;
+  padding: 1.5rem;
+  /* border-radius: 0.5rem; */
+  margin-bottom: 2rem;
+  border-left: 2px solid #4b5563;
+}
+
+.exp-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.exp-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #333;
+  margin-right: 1.5rem;
+}
+
+.exp-details {
+  color: #e5e7eb;
+}
+
+.exp-role {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.exp-location {
+  font-size: 1rem;
+  color: #9ca3af;
+  margin: 0.2rem 0;
+}
+
+.exp-duration {
+  font-size: 0.95rem;
+  color: #a7afbc;
+}
+
+.exp-points {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #d1d5db;
+}
+
+.exp-points li {
+  margin-bottom: 0.5rem;
+}
+
+.exp-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
