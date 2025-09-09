@@ -231,7 +231,7 @@ body {
 .exp-header {
   display: flex;
   align-items: center;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .exp-img {
@@ -272,6 +272,12 @@ body {
 
 .exp-points li {
   margin-bottom: 0.5rem;
+}
+
+.exp-impact {
+  color: #d1d5db;
+  margin-top: 1rem;
+  font-style: italic;
 }
 
 .exp-tech {
