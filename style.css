@@ -42,6 +42,7 @@ body {
   height: 150px;
   margin: 0 0 0.5rem 0;
   border-radius: 50%;
+  object-fit: cover;
   background: #ddd;
 }
 
@@ -80,10 +81,10 @@ body {
 .btn {
   display: inline-flex;
   align-items: center;
-  padding: 0.25rem 0.75rem; /* reduced padding */
+  padding: 0.25rem 0.75rem;
   text-decoration: none;
   border-radius: 0.3rem;
-  font-size: 0.9rem; /* slightly smaller text */
+  font-size: 0.9rem;
   transition: background 0.3s, color 0.3s;
   cursor: pointer;
   border: none;
@@ -135,8 +136,8 @@ body {
 
 /* Call to Action */
 .cta-text {
-  margin-top: 1.2rem; /* reduced spacing */
-  font-size: 1.4rem;  /* slightly smaller */
+  margin-top: 1.2rem;
+  font-size: 1.4rem;
   color: #ffffff;
   font-weight: 500;
   outline: none;
@@ -148,12 +149,6 @@ body {
   padding: 3rem 6rem 2rem 2rem;
   overflow-y: auto;
   width: 60%;
-}
-
-.about-section,
-.skills-section,
-.experience-section {
-  /*  */
 }
 
 .section-title {
@@ -188,7 +183,7 @@ body {
 /* Badges */
 .badge {
   display: inline-block;
-  padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 0.75rem;
   font-weight: 500;
   border-radius: 9999px;
@@ -238,6 +233,7 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  object-fit: cover;
   background: #333;
   margin-right: 1.5rem;
 }
