@@ -218,8 +218,8 @@ body {
 
 .exp-card {
   background: #111111;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
+  padding: 0 1.5rem 0.5rem 1.5rem;
+  margin-bottom: 1rem;
   border-left: 2px solid #4b5563;
 }
 
@@ -280,4 +280,85 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+/* Projects Section */
+.projects-section {
+  margin-bottom: 3rem;
+}
+
+.project-card {
+  background: #111111;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 2px solid #4b5563;
+}
+
+.project-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.project-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #333;
+  flex-shrink: 0;
+}
+
+.project-body {
+  flex: 1;
+}
+
+.project-details {
+  color: #e5e7eb;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: #9ca3af;
+  margin-top: 0.3rem;
+}
+
+.project-points {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+  color: #d1d5db;
+}
+
+.project-points li {
+  margin-bottom: 0.5rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links .project-icon {
+  color: #9ca3af;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.project-links .project-icon:hover {
+  color: #00e61f;
 }
