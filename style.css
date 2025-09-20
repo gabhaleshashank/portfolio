@@ -282,11 +282,67 @@ body {
   gap: 0.5rem;
 }
 
-/* Projects Section */
-.projects-section {
+/* Toggle Section */
+.toggle-section {
   margin-bottom: 3rem;
 }
 
+.toggle-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.toggle-labels {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toggle-label {
+  font-size: 2rem;
+  color: #9ca3af;
+  transition: all 0.3s;
+  cursor: pointer;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.toggle-label:hover {
+  color: #e5e7eb;
+  background: rgba(75, 85, 99, 0.3);
+}
+
+.toggle-label.active {
+  color: #fff;
+  font-weight: 600;
+  background: rgba(59, 130, 246, 0.2);
+}
+
+.toggle-label.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 2px;
+  background: #3b82f6;
+  border-radius: 1px;
+}
+
+/* Content sections */
+.toggle-content {
+  display: none;
+}
+
+.toggle-content.active {
+  display: block;
+}
+
+/* Projects Section */
 .project-card {
   background: #111111;
   padding: 1.5rem;
@@ -361,4 +417,69 @@ body {
 
 .project-links .project-icon:hover {
   color: #00e61f;
+}
+
+/* Certifications Section */
+.cert-card {
+  background: #111111;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 2px solid #4b5563;
+}
+
+.cert-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.cert-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #333;
+  flex-shrink: 0;
+}
+
+.cert-body {
+  flex: 1;
+}
+
+.cert-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.cert-authority {
+  font-size: 1rem;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.cert-description {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+  color: #d1d5db;
+}
+
+.cert-description li {
+  margin-bottom: 0.5rem;
+}
+
+.cert-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Badge for certifications */
+.badge-cert {
+  background: rgba(168, 85, 247, 0.3);
+  color: #a855f7;
 }
