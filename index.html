@@ -224,106 +224,184 @@
         </div>
       </section>
 
-      <!-- Projects -->
-      <section class="projects-section unique-projects">
-        <h2 class="section-title">Projects</h2>
+      <!-- Projects & Certifications Toggle Section -->
+      <section class="toggle-section">
+        <div class="toggle-header">
+          <div class="toggle-labels">
+            <span class="toggle-label active" id="projectsLabel" onclick="toggleSection('projects')">Projects</span>
+            <span class="toggle-label" id="certificationsLabel"
+              onclick="toggleSection('certifications')">Certifications</span>
+          </div>
+        </div>
 
-        <!-- Project 1 -->
-        <div class="project-card">
-          <div class="project-header">
-            <img src="assets/library-management-system-logo.png" alt="Project 1" class="project-img" />
-            <div class="project-body">
-              <div class="project-details">
-                <h3 class="project-title">Library Management System</h3>
-                <p class="project-desc">A web app to manage books, members, and transactions efficiently.</p>
+        <!-- Projects Content -->
+        <div id="projectsContent" class="toggle-content active">
+
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-header">
+              <img src="assets/library-management-system-logo.png" alt="Project 1" class="project-img" />
+              <div class="project-body">
+                <div class="project-details">
+                  <h3 class="project-title">Library Management System</h3>
+                  <p class="project-desc">A web app to manage books, members, and transactions efficiently.</p>
+                </div>
+                <ul class="project-points">
+                  <li>Implemented book catalog with XML/XSLT integration.</li>
+                  <li>Added PHP + MySQL backend for authentication and CRUD.</li>
+                  <li>Used AngularJS for dynamic UI updates.</li>
+                </ul>
+                <div class="project-tech">
+                  <span class="badge badge-lang">HTML</span>
+                  <span class="badge badge-lang">CSS</span>
+                  <span class="badge badge-lang">JavaScript</span>
+                  <span class="badge badge-db">MySQL</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/gabhaleshashank/wt-miniproject" target="_blank" aria-label="GitHub Repo"
+                    class="project-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path d="M12 .296c-6.63 0-12 5.373-12 12 
+                        0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 
+                        0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61
+                        -.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 
+                        1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.809 1.304 
+                        3.495.997.108-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 
+                        0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 
+                        0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.552 
+                        3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 
+                        1.23 1.91 1.23 3.22 0 4.61-2.805 
+                        5.625-5.475 5.92.43.37.81 1.096.81 2.22 
+                        0 1.606-.015 2.896-.015 3.286 
+                        0 .315.21.69.825.57C20.565 22.092 
+                        24 17.592 24 12.296c0-6.627-5.373-12-12-12" />
+                    </svg>
+                  </a>
+                </div>
               </div>
-              <ul class="project-points">
-                <li>Implemented book catalog with XML/XSLT integration.</li>
-                <li>Added PHP + MySQL backend for authentication and CRUD.</li>
-                <li>Used AngularJS for dynamic UI updates.</li>
-              </ul>
-              <div class="project-tech">
-                <span class="badge badge-lang">HTML</span>
-                <span class="badge badge-lang">CSS</span>
-                <span class="badge badge-lang">JavaScript</span>
-                <span class="badge badge-db">MySQL</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/gabhaleshashank/wt-miniproject" target="_blank" aria-label="GitHub Repo"
-                  class="project-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path d="M12 .296c-6.63 0-12 5.373-12 12 
-                      0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 
-                      0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61
-                      -.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 
-                      1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.809 1.304 
-                      3.495.997.108-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 
-                      0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 
-                      0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.552 
-                      3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 
-                      1.23 1.91 1.23 3.22 0 4.61-2.805 
-                      5.625-5.475 5.92.43.37.81 1.096.81 2.22 
-                      0 1.606-.015 2.896-.015 3.286 
-                      0 .315.21.69.825.57C20.565 22.092 
-                      24 17.592 24 12.296c0-6.627-5.373-12-12-12" />
-                  </svg>
-                </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-header">
+              <img src="assets/image-search-using-unsplash-api-logo.png" alt="Project 2" class="project-img" />
+              <div class="project-body">
+                <div class="project-details">
+                  <h3 class="project-title">Image Search using Unsplash API</h3>
+                  <p class="project-desc">A simple web application that allows users to search and view images using the
+                    Unsplash API.
+                  </p>
+                </div>
+                <ul class="project-points">
+                  <li>Search images by keyword.</li>
+                  <li>Fetch images dynamically from Unsplash API.</li>
+                  <li>Responsive design.</li>
+                </ul>
+                <div class="project-tech">
+                  <span class="badge badge-lang">HTML</span>
+                  <span class="badge badge-fw">CSS</span>
+                  <span class="badge badge-db">JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/gabhaleshashank/image-search-using-unsplash-api" target="_blank"
+                    aria-label="GitHub Repo" class="project-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path d="M12 .296c-6.63 0-12 5.373-12 12 
+                        0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 
+                        0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61
+                        -.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 
+                        1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.809 1.304 
+                        3.495.997.108-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 
+                        0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 
+                        0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.552 
+                        3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 
+                        1.23 1.91 1.23 3.22 0 4.61-2.805 
+                        5.625-5.475 5.92.43.37.81 1.096.81 2.22 
+                        0 1.606-.015 2.896-.015 3.286 
+                        0 .315.21.69.825.57C20.565 22.092 
+                        24 17.592 24 12.296c0-6.627-5.373-12-12-12" />
+                    </svg>
+                  </a>
+                  <a href="https://gabhaleshashank.github.io/image-search-using-unsplash-api/" target="_blank"
+                    class="btn btn-resume">Live
+                    Demo</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 2 -->
-        <div class="project-card">
-          <div class="project-header">
-            <img src="assets/image-search-using-unsplash-api-logo.png" alt="Project 2" class="project-img" />
-            <div class="project-body">
-              <div class="project-details">
-                <h3 class="project-title">Image Search using Unsplash API</h3>
-                <p class="project-desc">A simple web application that allows users to search and view images using the
-                  Unsplash API.
-                </p>
+        <!-- Certifications Content -->
+        <div id="certificationsContent" class="toggle-content">
+          <!-- Certification 1 -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <img src="assets/aws-certification-logo.png" alt="AWS Certification" class="cert-img" />
+              <div class="cert-body">
+                <h3 class="cert-name">AWS Cloud Practitioner</h3>
+                <p class="cert-authority">Amazon Web Services (AWS)</p>
+                <ul class="cert-description">
+                  <li>Gained foundational understanding of AWS cloud computing concepts</li>
+                  <li>Learned about AWS core services, security, and pricing models</li>
+                  <li>Explored best practices for cloud architecture and deployment</li>
+                </ul>
+                <div class="cert-skills">
+                  <span class="badge badge-cert">Cloud Computing</span>
+                  <span class="badge badge-cert">AWS Services</span>
+                  <span class="badge badge-cert">Security</span>
+                  <span class="badge badge-cert">Cost Management</span>
+                </div>
               </div>
-              <ul class="project-points">
-                <li>Search images by keyword.</li>
-                <li>Fetch images dynamically from Unsplash API.</li>
-                <li>Responsive design.</li>
-              </ul>
-              <div class="project-tech">
-                <span class="badge badge-lang">HTML</span>
-                <span class="badge badge-fw">CSS</span>
-                <span class="badge badge-db">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Certification 2 -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <img src="assets/python-certification-logo.png" alt="Python Certification" class="cert-img" />
+              <div class="cert-body">
+                <h3 class="cert-name">Python for Data Science</h3>
+                <p class="cert-authority">IBM / Coursera</p>
+                <ul class="cert-description">
+                  <li>Mastered Python fundamentals and data manipulation techniques</li>
+                  <li>Worked with pandas, numpy, and matplotlib for data analysis</li>
+                  <li>Built data visualization dashboards and statistical models</li>
+                </ul>
+                <div class="cert-skills">
+                  <span class="badge badge-cert">Python</span>
+                  <span class="badge badge-cert">Data Analysis</span>
+                  <span class="badge badge-cert">Pandas</span>
+                  <span class="badge badge-cert">Visualization</span>
+                </div>
               </div>
-              <div class="project-links">
-                <a href="https://github.com/gabhaleshashank/image-search-using-unsplash-api" target="_blank"
-                  aria-label="GitHub Repo" class="project-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path d="M12 .296c-6.63 0-12 5.373-12 12 
-                      0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 
-                      0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61
-                      -.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 
-                      1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.809 1.304 
-                      3.495.997.108-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 
-                      0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 
-                      0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.552 
-                      3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 
-                      1.23 1.91 1.23 3.22 0 4.61-2.805 
-                      5.625-5.475 5.92.43.37.81 1.096.81 2.22 
-                      0 1.606-.015 2.896-.015 3.286 
-                      0 .315.21.69.825.57C20.565 22.092 
-                      24 17.592 24 12.296c0-6.627-5.373-12-12-12" />
-                  </svg>
-                </a>
-                <a href="https://gabhaleshashank.github.io/image-search-using-unsplash-api/" target="_blank"
-                  class="btn btn-resume">Live
-                  Demo</a>
+            </div>
+          </div>
+
+          <!-- Certification 3 -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <img src="assets/react-certification-logo.png" alt="React Certification" class="cert-img" />
+              <div class="cert-body">
+                <h3 class="cert-name">React Developer Certification</h3>
+                <p class="cert-authority">Meta / Coursera</p>
+                <ul class="cert-description">
+                  <li>Developed proficiency in React components and state management</li>
+                  <li>Learned modern React patterns including hooks and context API</li>
+                  <li>Built responsive web applications with optimal performance</li>
+                </ul>
+                <div class="cert-skills">
+                  <span class="badge badge-cert">React</span>
+                  <span class="badge badge-cert">JavaScript</span>
+                  <span class="badge badge-cert">Component Design</span>
+                  <span class="badge badge-cert">State Management</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
       </section>
 
     </main>
